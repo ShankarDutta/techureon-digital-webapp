@@ -1,3 +1,4 @@
+"use client";
 import {
 	NavigationMenu,
 	NavigationMenuContent,
@@ -7,8 +8,11 @@ import {
 	NavigationMenuTrigger,
 } from "@/components/shadcnui/navigation-menu";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { navigationMenuTriggerStyle } from "../shadcnui/navigation-menu";
 const DesktopNav = () => {
+	const pathname = usePathname();
+
 	return (
 		<section className="space-x-6">
 			<NavigationMenu viewport={false}>
@@ -19,7 +23,7 @@ const DesktopNav = () => {
 							className={navigationMenuTriggerStyle()}>
 							<Link
 								href="/"
-								className="hover:bg-transparent hover:text-blue-400 dark:hover:text-blue-300">
+								className={`${pathname == "/" ? "font-bold text-blue-600 dark:text-blue-300" : null} hover:bg-transparent hover:text-blue-800 dark:hover:text-blue-300`}>
 								Home
 							</Link>
 						</NavigationMenuLink>
@@ -28,36 +32,39 @@ const DesktopNav = () => {
 
 				<NavigationMenuList>
 					<NavigationMenuItem>
-						<NavigationMenuTrigger>Services</NavigationMenuTrigger>
+						<NavigationMenuTrigger
+							className={`${["/brand-design", "/ui-ux-design", "/development", "/marketing"].includes(pathname) ? "text-blue-600 dark:text-blue-300" : null} hover:text-blue-800 dark:hover:text-blue-300`}>
+							Services
+						</NavigationMenuTrigger>
 						<NavigationMenuContent className="relative border-none bg-black/20 backdrop-blur-md dark:bg-white/12">
-							<ul className="grid w-[300px] gap-6">
-								<li>
+							<ul className="grid w-[300px]">
+								<li className="space-y-2">
 									<NavigationMenuLink asChild>
-										<Link href="/brand-design">
-											<div className="font-medium">
-												Brand Desing
-											</div>
+										<Link
+											href="/brand-design"
+											className={`${pathname == "/brand-design" ? "bg-blue-500 text-white dark:bg-fuchsia-500" : null} font-medium hover:bg-blue-500 hover:text-white dark:hover:bg-fuchsia-500`}>
+											Brand Desing
 										</Link>
 									</NavigationMenuLink>
 									<NavigationMenuLink asChild>
-										<Link href="/ui-ux-design">
-											<div className="font-medium">
-												Ui/Ux Design
-											</div>
+										<Link
+											href="/ui-ux-design"
+											className={`${pathname == "/ui-ux-design" ? "bg-blue-500 text-white dark:bg-fuchsia-500" : null} font-medium hover:bg-blue-500 hover:text-white dark:hover:bg-fuchsia-500`}>
+											Ui/Ux Design
 										</Link>
 									</NavigationMenuLink>
 									<NavigationMenuLink asChild>
-										<Link href="/development">
-											<div className="font-medium">
-												Web Development
-											</div>
+										<Link
+											href="/development"
+											className={`${pathname == "/development" ? "bg-blue-500 text-white dark:bg-fuchsia-500" : null} font-medium hover:bg-blue-500 hover:text-white dark:hover:bg-fuchsia-500`}>
+											Web Development
 										</Link>
 									</NavigationMenuLink>
 									<NavigationMenuLink asChild>
-										<Link href="/marketing">
-											<div className="font-medium">
-												Marketing
-											</div>
+										<Link
+											href="/marketing"
+											className={`${pathname == "/marketing" ? "bg-blue-500 text-white dark:bg-fuchsia-500" : null} font-medium hover:bg-blue-500 hover:text-white dark:hover:bg-fuchsia-500`}>
+											Marketing
 										</Link>
 									</NavigationMenuLink>
 								</li>
@@ -73,7 +80,7 @@ const DesktopNav = () => {
 							className={navigationMenuTriggerStyle()}>
 							<Link
 								href="/about"
-								className="hover:bg-transparent hover:text-blue-400 dark:hover:text-blue-300">
+								className={`${pathname == "/about" ? "text-blue-600 dark:text-blue-300" : null} hover:bg-transparent hover:text-blue-800 dark:hover:text-blue-300`}>
 								About
 							</Link>
 						</NavigationMenuLink>
@@ -87,7 +94,7 @@ const DesktopNav = () => {
 							className={navigationMenuTriggerStyle()}>
 							<Link
 								href="/blog"
-								className="hover:bg-transparent hover:text-blue-400 dark:hover:text-blue-300">
+								className={`${pathname == "/blog" ? "text-blue-600 dark:text-blue-300" : null} hover:bg-transparent hover:text-blue-800 dark:hover:text-blue-300`}>
 								Blog
 							</Link>
 						</NavigationMenuLink>
@@ -101,7 +108,7 @@ const DesktopNav = () => {
 							className={navigationMenuTriggerStyle()}>
 							<Link
 								href="/contact"
-								className="hover:bg-transparent hover:text-blue-400 dark:hover:text-blue-300">
+								className={`${pathname == "/contact" ? "text-blue-600 dark:text-blue-300" : null} hover:bg-transparent hover:text-blue-800 dark:hover:text-blue-300`}>
 								Contact
 							</Link>
 						</NavigationMenuLink>
