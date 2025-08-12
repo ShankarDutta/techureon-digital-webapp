@@ -1,6 +1,7 @@
 import HomeHero from "@/components/Hero/HomeHero";
 import AboutBrief from "@/components/Home/AboutBrief";
 import BrandSlide from "@/components/Home/BrandSlide";
+import OurAchivements from "@/components/Home/OurAchivements";
 import Slider from "@/components/Home/Slider";
 import { Metadata } from "next";
 
@@ -16,16 +17,20 @@ const page = () => {
 				<HomeHero />
 			</section>
 
-			<section className="mx-auto max-w-7xl px-6 pt-14 lg:px-14">
+			<section className="pt-14 lg:px-14">
 				<Slider />
 			</section>
 
-			<section className="mx-auto max-w-7xl px-6 pt-14">
+			<section className="pt-14">
 				<BrandSlide />
 			</section>
 
-			<section className="mx-auto max-w-7xl px-6 pt-14">
+			<section className="pt-14">
 				<AboutBrief />
+			</section>
+
+			<section className="pt-14">
+				<OurAchivements />
 			</section>
 		</section>
 	);
