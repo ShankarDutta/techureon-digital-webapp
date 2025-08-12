@@ -3,14 +3,14 @@ import { Button } from "../shadcnui/button";
 
 const AboutBrief = () => {
 	return (
-		<section className="flex flex-col items-center gap-8 lg:flex-row">
+		<section className="flex flex-col items-center gap-6 lg:flex-row lg:gap-20">
 			<div className="space-y-6">
 				<h1 className="text-2xl font-bold">
 					Unforgettable, Websites, Brands & Visuals for Bold
 					Visionaries.
 				</h1>
 
-				<p className="text-black/70 dark:text-white/70">
+				<p className="text-sm text-black/70 dark:text-white/70">
 					We are not your typical design agency. Founded in 2014, we
 					are a collective of designers, developers, and strategists
 					who believe great digital experiences should be beautiful,
