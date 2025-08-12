@@ -20,7 +20,7 @@ const Slider = () => {
 					clickable: true,
 				}}
 				modules={[Autoplay]}
-				className="mySwiper w-full max-w-7xl rounded-2xl outline-[18]">
+				className="mySwiper w-full rounded-2xl outline-[10] md:outline-[14]">
 				<SwiperSlide className="relative aspect-[4/2] w-full">
 					<Image
 						src="/home/hero-slide-1.jpg"

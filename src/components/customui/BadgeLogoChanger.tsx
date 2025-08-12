@@ -19,6 +19,7 @@ const BadgeLogoChanger = () => {
 					alt="icon"
 					height={200}
 					width={200}
+					priority
 					className="h-[20] w-[40]"
 				/>
 			) : (
