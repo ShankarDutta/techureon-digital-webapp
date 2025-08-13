@@ -14,11 +14,11 @@ const OurAchivements = () => {
 	return (
 		<div
 			ref={ref}
-			className="grid grid-cols-1 place-items-center gap-10 rounded-xl bg-black/10 py-10 md:grid-cols-3 md:gap-0 dark:bg-white/20">
+			className="grid grid-cols-1 place-items-center gap-10 rounded-xl py-10 md:grid-cols-3 md:gap-0">
 			{/* 1st column */}
 			<div className="space-y-2">
 				<div className="flex items-center justify-center gap-2 text-3xl font-bold">
-					<BiTargetLock />
+					<BiTargetLock size={34} />
 					{inView && (
 						<HyperText animateOnHover={false}>72+</HyperText>
 					)}
@@ -29,7 +29,7 @@ const OurAchivements = () => {
 			{/* 2nd column */}
 			<div className="space-y-2">
 				<div className="flex items-center justify-center gap-2 text-3xl font-bold">
-					<FaFire />
+					<FaFire size={34} />
 					{inView && (
 						<HyperText animateOnHover={false}>100+</HyperText>
 					)}
@@ -40,7 +40,7 @@ const OurAchivements = () => {
 			{/* 3rd column */}
 			<div className="space-y-2">
 				<div className="flex items-center justify-center gap-2 text-3xl font-bold">
-					<FaLightbulb />
+					<FaLightbulb size={34} />
 					{inView && (
 						<HyperText animateOnHover={false}>10+</HyperText>
 					)}

@@ -3,7 +3,7 @@ import { Button } from "../shadcnui/button";
 
 const AboutBrief = () => {
 	return (
-		<section className="flex flex-col items-center gap-6 lg:flex-row lg:gap-20">
+		<section className="flex flex-col items-center gap-6 lg:flex-row lg:gap-20 lg:px-6">
 			<div className="space-y-6">
 				<h1 className="text-2xl font-bold">
 					Unforgettable, Websites, Brands & Visuals for Bold

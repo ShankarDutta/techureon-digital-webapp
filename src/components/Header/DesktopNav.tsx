@@ -36,7 +36,7 @@ const DesktopNav = () => {
 							className={`${["/brand-design", "/ui-ux-design", "/development", "/marketing"].includes(pathname) ? "text-blue-600 dark:text-blue-300" : null} hover:text-blue-800 dark:hover:text-blue-300`}>
 							Services
 						</NavigationMenuTrigger>
-						<NavigationMenuContent className="relative border-none bg-black/20 backdrop-blur-md dark:bg-white/12">
+						<NavigationMenuContent className="relative border-none bg-black/20">
 							<ul className="grid w-[300px]">
 								<li className="space-y-2">
 									<NavigationMenuLink asChild>

@@ -2,6 +2,7 @@ import HomeHero from "@/components/Hero/HomeHero";
 import AboutBrief from "@/components/Home/AboutBrief";
 import BrandSlide from "@/components/Home/BrandSlide";
 import OurAchivements from "@/components/Home/OurAchivements";
+import ServiceSec from "@/components/Home/ServiceSec";
 import Slider from "@/components/Home/Slider";
 import { Metadata } from "next";
 
@@ -31,6 +32,9 @@ const page = () => {
 
 			<section className="pt-14">
 				<OurAchivements />
+			</section>
+			<section className="grid grid-cols-1 gap-6 pt-14 lg:grid-cols-2">
+				<ServiceSec />
 			</section>
 		</section>
 	);
