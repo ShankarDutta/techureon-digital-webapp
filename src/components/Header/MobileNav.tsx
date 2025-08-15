@@ -35,7 +35,7 @@ const MobileNav = () => {
 				<SheetTrigger className="cursor-pointer rounded-md bg-blue-500 p-3">
 					<FaBars color="white" />
 				</SheetTrigger>
-				<SheetContent className="border-0 bg-white backdrop-blur-lg dark:bg-transparent">
+				<SheetContent className="z-[100] border-0 bg-white backdrop-blur-lg dark:bg-transparent">
 					<SheetHeader className="border-b-2 border-gray-400">
 						<SheetTitle>
 							<Image
