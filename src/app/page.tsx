@@ -2,6 +2,7 @@ import HomeHero from "@/components/Hero/HomeHero";
 import AboutBrief from "@/components/Home/AboutBrief";
 import BrandSlide from "@/components/Home/BrandSlide";
 import OurAchivements from "@/components/Home/OurAchivements";
+import Review from "@/components/Home/Review";
 import ServiceSec from "@/components/Home/ServiceSec";
 import Slider from "@/components/Home/Slider";
 import { Metadata } from "next";
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 
 const page = () => {
 	return (
-		<section className="mx-auto max-w-7xl px-6">
+		<section className="mx-auto px-6">
 			<section className="pt-35">
 				<HomeHero />
 			</section>
@@ -33,8 +34,14 @@ const page = () => {
 			<section className="pt-14">
 				<OurAchivements />
 			</section>
-			<section className="grid grid-cols-1 gap-6 pt-14 lg:grid-cols-2">
+			<section className="grid grid-cols-1 gap-6 px-0 pt-14 md:px-6 lg:grid-cols-2">
 				<ServiceSec />
+			</section>
+			<section className="pt-20 pb-40">
+				<h1 className="text-center text-4xl font-bold">
+					What Clients Say About Us
+				</h1>
+				<Review />
 			</section>
 		</section>
 	);

@@ -7,7 +7,7 @@ import MobileNav from "./MobileNav";
 
 const NavBar = () => {
 	return (
-		<header className="fixed right-0 left-0 z-[20] mx-auto w-full max-w-7xl px-6">
+		<header className="fixed right-0 left-0 z-[100] mx-auto w-full max-w-7xl px-6">
 			<nav className="mt-6 flex items-center justify-between rounded-md bg-black/6 px-6 pb-2 backdrop-blur-lg md:px-8 lg:rounded-4xl dark:bg-white/8">
 				<div className="mt-1 flex items-center">
 					{/* Logo  */}
