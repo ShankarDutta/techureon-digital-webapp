@@ -15,7 +15,7 @@ const Footer = () => {
 			<div className="bg-[url('/footer-bg.jpg')] bg-cover bg-center opacity-90">
 				<div className="h-auto bg-black/14 px-6 pt-6 backdrop-blur-sm">
 					<div className="mx-auto grid max-w-7xl grid-cols-1 px-6">
-						<div className="block space-y-4 lg:hidden">
+						<div className="block space-y-4 md:hidden">
 							{/* Logo  */}
 							<Link href={"/"}>
 								<Image
@@ -36,26 +36,34 @@ const Footer = () => {
 
 							{/* Icons  */}
 							<div className="flex gap-2">
-								<div className="cursor-pointer rounded-full bg-blue-500 p-2 text-white hover:bg-blue-600 dark:bg-fuchsia-500 dark:hover:bg-fuchsia-600">
+								<Link
+									href={"/"}
+									className="cursor-pointer rounded-full bg-blue-500 p-2 text-white hover:bg-blue-600 dark:bg-fuchsia-500 dark:hover:bg-fuchsia-600">
 									<FaFacebookF />
-								</div>
-								<div className="cursor-pointer rounded-full bg-blue-500 p-2 text-white hover:bg-blue-600 dark:bg-fuchsia-500 dark:hover:bg-fuchsia-600">
+								</Link>
+								<Link
+									href={"/"}
+									className="cursor-pointer rounded-full bg-blue-500 p-2 text-white hover:bg-blue-600 dark:bg-fuchsia-500 dark:hover:bg-fuchsia-600">
 									<FaInstagram />
-								</div>
-								<div className="cursor-pointer rounded-full bg-blue-500 p-2 text-white hover:bg-blue-600 dark:bg-fuchsia-500 dark:hover:bg-fuchsia-600">
+								</Link>
+								<Link
+									href={"/"}
+									className="cursor-pointer rounded-full bg-blue-500 p-2 text-white hover:bg-blue-600 dark:bg-fuchsia-500 dark:hover:bg-fuchsia-600">
 									<FaYoutube />
-								</div>
-								<div className="cursor-pointer rounded-full bg-blue-500 p-2 text-white hover:bg-blue-600 dark:bg-fuchsia-500 dark:hover:bg-fuchsia-600">
+								</Link>
+								<Link
+									href={"/"}
+									className="cursor-pointer rounded-full bg-blue-500 p-2 text-white hover:bg-blue-600 dark:bg-fuchsia-500 dark:hover:bg-fuchsia-600">
 									<FaWhatsapp />
-								</div>
+								</Link>
 							</div>
 						</div>
 						{/* mobile nav  */}
-						<div className="mt-4 block lg:hidden">
+						<div className="mt-4 block md:hidden">
 							<MobileFooter />
 						</div>
 						{/* Desktop nav  */}
-						<div className="mt-6 hidden lg:block">
+						<div className="mt-6 hidden md:block">
 							<DesktopFooter />
 						</div>
 					</div>
