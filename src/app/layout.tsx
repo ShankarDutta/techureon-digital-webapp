@@ -16,9 +16,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
 					defaultTheme="dark"
 					enableSystem={false}>
 					<NavBar />
-					<main className="container mx-auto max-w-7xl px-6">
-						{children}
-					</main>
+					<main className="mx-auto max-w-7xl px-6">{children}</main>
 					<FooterTop />
 					<Footer />
 				</ThemeProvider>
