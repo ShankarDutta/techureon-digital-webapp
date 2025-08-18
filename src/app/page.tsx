@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const page = () => {
 	return (
 		<section className="mx-auto px-6">
-			<section className="pt-35">
+			<section className="pt-36">
 				<HomeHero />
 			</section>
 
