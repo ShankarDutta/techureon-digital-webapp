@@ -1,5 +1,5 @@
 // Home page card
-export let homeServiceCards = [
+export const homeServiceCards = [
 	{
 		id: 1,
 		heading: "Brand Design",
@@ -39,5 +39,31 @@ export let homeServiceCards = [
 		pointsII: "Creative content that grabs attention.",
 		pointsIII: "Multi-channel strategies for wider reach.",
 		link: "/marketing",
+	},
+];
+
+export const AboutWorkFlowCardsDatas = [
+	{
+		id: 1,
+		title: "Discover & Plan",
+		description:
+			"We dive deep into your goals, and 'must-haves' to craft a battle plan.",
+		buttonText: "Step 1",
+		icon: "/about/icon1.png",
+	},
+	{
+		id: 2,
+		title: "Design & Build",
+		description:
+			"You’ll see real work fast—with checkpoints to refine every detail.",
+		buttonText: "Step 2",
+		icon: "/about/icon2.png",
+	},
+	{
+		id: 3,
+		title: "Launch & Grow",
+		description: "We don’t just deliver—we optimize for long-term success.",
+		buttonText: "Step 3",
+		icon: "/about/icon3.png",
 	},
 ];

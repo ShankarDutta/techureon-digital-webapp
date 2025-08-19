@@ -13,3 +13,11 @@ export type homeServiceCardsType = {
 	pointsIII: string;
 	link: string;
 };
+
+export type AboutWorkFlowCardsDataType = {
+	id: number;
+	title: string;
+	description: string;
+	buttonText: string;
+	icon: string;
+};
