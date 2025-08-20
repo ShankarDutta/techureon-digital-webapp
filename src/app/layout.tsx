@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer/Footer";
+import FooterTop from "@/components/Footer/FooterTop";
 import NavBar from "@/components/Header/NavBar";
 import ThemeProvider from "@/components/ThemeProvider";
 import { RootLayoutProps } from "@/lib/types";
@@ -15,8 +17,8 @@ const RootLayout = ({ children }: RootLayoutProps) => {
 					enableSystem={false}>
 					<NavBar />
 					<main className="mx-auto max-w-7xl px-6">{children}</main>
-					{/* <FooterTop /> */}
-					{/* <Footer /> */}
+					<FooterTop />
+					<Footer />
 				</ThemeProvider>
 			</body>
 		</html>

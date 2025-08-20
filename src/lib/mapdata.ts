@@ -67,3 +67,41 @@ export const AboutWorkFlowCardsDatas = [
 		icon: "/about/icon3.png",
 	},
 ];
+
+export const OurExpartsImages = [
+	{
+		id: 1,
+		src: "team-01.jpg",
+		alt: "Img-1",
+		name: "John Doe",
+		position: "Founder",
+	},
+	{
+		id: 2,
+		src: "team-02.jpg",
+		alt: "Img-2",
+		name: "Jane Smith",
+		position: "Frontend Developer",
+	},
+	{
+		id: 3,
+		src: "team.jpg",
+		alt: "Img-3",
+		name: "Sophia Williams", // 👩 girl’s name
+		position: "UI/UX Designer", // changed role
+	},
+	{
+		id: 4,
+		src: "team-04.jpg",
+		alt: "Img-4",
+		name: "Emily Davis",
+		position: "Project Manager",
+	},
+	{
+		id: 5,
+		src: "team-05.jpg",
+		alt: "Img-5",
+		name: "David Brown",
+		position: "QA Specialist",
+	},
+];
