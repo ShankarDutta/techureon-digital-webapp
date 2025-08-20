@@ -1,4 +1,5 @@
 import Awards from "@/components/About/Awards";
+import TeamSlide from "@/components/About/TeamSlide";
 import WorkFlow from "@/components/About/WorkFlow";
 import AboutHero from "@/components/Hero/AboutHero";
 
@@ -16,11 +17,18 @@ const page = () => {
 				<WorkFlow />
 			</section>
 
-			<section className="pt-20 pb-20 text-center">
+			<section className="pt-20 text-center">
 				<h1 className="pb-10 text-4xl font-medium">
 					Recognitions & Awards
 				</h1>
 				<Awards />
+			</section>
+
+			<section className="pt-20 pb-20">
+				<h1 className="pb-10 text-center text-4xl font-medium">
+					Recognitions & Awards
+				</h1>
+				<TeamSlide />
 			</section>
 		</section>
 	);

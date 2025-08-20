@@ -21,3 +21,11 @@ export type AboutWorkFlowCardsDataType = {
 	buttonText: string;
 	icon: string;
 };
+
+export type OurExpartsImagesType = {
+	id: number;
+	src: string;
+	alt: string;
+	name: string;
+	position: string;
+};
