@@ -87,8 +87,8 @@ export const OurExpartsImages = [
 		id: 3,
 		src: "team.jpg",
 		alt: "Img-3",
-		name: "Sophia Williams", // 👩 girl’s name
-		position: "UI/UX Designer", // changed role
+		name: "Sophia Williams",
+		position: "UI/UX Designer",
 	},
 	{
 		id: 4,
@@ -103,5 +103,71 @@ export const OurExpartsImages = [
 		alt: "Img-5",
 		name: "David Brown",
 		position: "QA Specialist",
+	},
+];
+
+export const BlogCardsDatas = [
+	{
+		id: 1,
+		img: "post-01.jpg",
+		badge: "UI/UX Design",
+		title: "How We Boosted Client Conversions  With Smarter UI/UX",
+		subtitle: "Sep 23, 2020 / 1 minute of reading",
+	},
+	{
+		id: 2,
+		img: "post-02.jpg",
+		badge: "Brandings",
+		title: "Why Your Logo Colors Are Driving Away Your Ideal Customers",
+		subtitle: "Dec 24, 2020 / 1 minute of reading",
+	},
+	{
+		id: 3,
+		img: "post-03.jpg",
+		badge: "Web Development",
+		title: "WordPress vs Webflow – Our Developers Settle The Debate",
+		subtitle: "june 17, 2021 / 2 minutes of reading",
+	},
+	{
+		id: 4,
+		img: "post-04.jpg",
+		badge: "Web Development",
+		title: "The Lazy Developer’s Guide To SEO-Friendly Site Structures",
+		subtitle: "Aug 23, 2022 / 2 minutes of reading",
+	},
+	{
+		id: 5,
+		img: "post-5.jpg",
+		badge: "UI/UX Design",
+		title: "Mobile-First Design Mistakes That Are Costing You Customers",
+		subtitle: "Oct 02, 2022 / 1 minute of reading",
+	},
+	{
+		id: 6,
+		img: "post-06.jpg",
+		badge: "Web Development",
+		title: "How We Automated 80% Of Client Onboarding With No-Code",
+		subtitle: "March, 2023 / 1 minute of reading",
+	},
+	{
+		id: 7,
+		img: "post-07.jpg",
+		badge: "Branding",
+		title: "The $500 Rebrand That Made Our Client Look Like A Fortune 500",
+		subtitle: "Feb 13, 2024 / 1 minute of reading",
+	},
+	{
+		id: 8,
+		img: "post-08.jpg",
+		badge: "Web Development",
+		title: "How We Built A 98/100 PageSpeed Score Website In 2 Weeks",
+		subtitle: "Jan 08, 2025 / 1 minute of reading",
+	},
+	{
+		id: 9,
+		img: "post-09.jpg",
+		badge: "Branding",
+		title: "How We Made a Boring B2B Brand Go Viral",
+		subtitle: "Sep 19 , 2025 / 1 minute of reading",
 	},
 ];
