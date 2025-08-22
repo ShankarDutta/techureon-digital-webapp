@@ -14,7 +14,7 @@ const BlogHero = () => {
 		return null;
 	}
 	return (
-		<section className="py-40 text-center">
+		<section className="pt-34 text-center md:pt-40">
 			<Spotlight
 				className="-top-40 left-0 md:-top-20 md:left-60"
 				fill={resolvedTheme === "light" ? "#ffef00" : "white"}

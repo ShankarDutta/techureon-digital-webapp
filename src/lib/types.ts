@@ -29,3 +29,11 @@ export type OurExpartsImagesType = {
 	name: string;
 	position: string;
 };
+
+export type BlogCardsDataType = {
+	id: number;
+	img: string;
+	badge: string;
+	title: string;
+	subtitle: string;
+};
