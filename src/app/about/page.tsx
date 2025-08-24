@@ -26,7 +26,7 @@ const page = () => {
 
 			<section className="pt-20 pb-20">
 				<h1 className="pb-10 text-center text-4xl font-medium">
-					Recognitions & Awards
+					The Brains Behind Techureon
 				</h1>
 				<TeamSlide />
 			</section>
