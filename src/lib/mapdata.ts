@@ -4,7 +4,7 @@ export const homeServiceCards = [
 		id: 1,
 		heading: "Brand Design",
 		discription:
-			"Interfaces that delight users and drive conversions. We design with outcomes in mind.",
+			"Visual identities that inspire trust and growth. We craft with clarity and purpose.",
 		pointsI: "Logos infused with hidden stories.",
 		pointsII: "Scalable visual identities for growth.",
 		pointsIII: "Style guides anyone can follow easily.",

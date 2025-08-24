@@ -37,6 +37,7 @@ const SubscribeForm = () => {
 								<FormControl>
 									<Input
 										{...field}
+										className="text-white"
 										placeholder="Example@gmail.com"
 									/>
 								</FormControl>
