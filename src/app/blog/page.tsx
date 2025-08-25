@@ -4,7 +4,7 @@ import { Button } from "@/components/shadcnui/button";
 
 const page = () => {
 	return (
-		<section className="mx-auto max-w-7xl px-6">
+		<section className="mx-auto max-w-7xl overflow-hidden px-6">
 			{/* hero sec  */}
 			<BlogHero />
 

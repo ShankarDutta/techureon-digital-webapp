@@ -50,14 +50,14 @@ const SubscribeForm = () => {
 						disabled={rhForm.formState.isSubmitSuccessful}>
 						{rhForm.formState.isSubmitSuccessful ? (
 							<>
-								<span className="group inline-flex items-center">
+								<span className="flex items-center">
 									<CheckIcon className="mr-2 size-4" />
 									Subscribed
 								</span>
 							</>
 						) : (
 							<>
-								<span className="group inline-flex items-center">
+								<span className="flex items-center">
 									Follow
 									<ChevronRightIcon className="ml-1 size-4 transition-transform duration-300 group-hover:translate-x-1" />
 								</span>

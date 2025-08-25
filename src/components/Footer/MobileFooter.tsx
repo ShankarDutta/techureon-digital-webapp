@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import SubscribeForm from "../Forms/SubscribeForm";
 const MobileFooter = () => {

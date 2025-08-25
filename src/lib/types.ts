@@ -36,4 +36,15 @@ export type BlogCardsDataType = {
 	badge: string;
 	title: string;
 	subtitle: string;
+	slug: string;
+	Content: {
+		heading1: string;
+		paragraph1: string;
+		paragraph2: string;
+		qoute: string;
+		heading2: string;
+		paragraph3: string;
+		heading3: string;
+		paragraph4: string;
+	};
 };
