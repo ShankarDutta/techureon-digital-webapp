@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/shadcnui/card";
 import { BlogCardsDataType } from "@/lib/types";
 import Image from "next/image";
+import Link from "next/link";
 import { Badge } from "../shadcnui/badge";
 import { Button } from "../shadcnui/button";
 
@@ -27,9 +28,11 @@ const Cards = ({ info }: Cardprops) => {
 						{info.subtitle}
 					</p>
 
-					<Button className="bg-blue-500 text-white hover:cursor-pointer hover:bg-blue-600">
-						Know More
-					</Button>
+					<Link href={`/blog/${info.slug}`}>
+						<Button className="bg-blue-500 text-white hover:cursor-pointer hover:bg-blue-600">
+							Know More
+						</Button>
+					</Link>
 				</CardContent>
 			</Card>
 		</>

@@ -10,11 +10,11 @@ const RootLayout = ({ children }: RootLayoutProps) => {
 		<html
 			lang="en"
 			suppressHydrationWarning>
-			<body className="">
+			<body suppressHydrationWarning>
 				<ThemeProvider
-					attribute={"class"}
-					defaultTheme="dark"
-					enableSystem={false}>
+					attribute="class"
+					defaultTheme="system"
+					enableSystem>
 					<NavBar />
 					<main className="mx-auto max-w-7xl px-6">{children}</main>
 					<FooterTop />

@@ -14,7 +14,7 @@ const FooterTop = () => {
 					technology, creativity, and strategy to drive your success.
 					for this para suggest a heading
 				</div>
-				<Button className="hover: mt-2 bg-blue-500 text-white hover:cursor-pointer hover:bg-blue-600">
+				<Button className="mt-2 bg-blue-500 text-white hover:cursor-pointer hover:bg-blue-600">
 					Contact Now
 				</Button>
 			</div>

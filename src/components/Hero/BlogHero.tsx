@@ -1,4 +1,5 @@
 "use client";
+
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { Spotlight } from "../ui/spotlight";
@@ -16,7 +17,7 @@ const BlogHero = () => {
 	return (
 		<section className="pt-34 text-center md:pt-40">
 			<Spotlight
-				className="-top-40 left-0 md:-top-20 md:left-60"
+				className="-top-40 left-0 hidden overflow-x-hidden md:-top-20 md:left-60 md:block"
 				fill={resolvedTheme === "light" ? "#ffef00" : "white"}
 			/>
 			<h1 className="text-2xl font-bold md:text-4xl">

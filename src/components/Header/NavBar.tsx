@@ -34,7 +34,7 @@ const NavBar = () => {
 					<MobileNav />
 				</div>
 
-				<Button className="hover: mt-2 hidden bg-blue-500 text-white hover:cursor-pointer hover:bg-blue-600 lg:block">
+				<Button className="mt-2 hidden bg-blue-500 text-white hover:cursor-pointer hover:bg-blue-600 lg:block">
 					Schedule a Call
 				</Button>
 			</nav>
