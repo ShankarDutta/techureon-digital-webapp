@@ -1,3 +1,4 @@
+import OurMotive from "@/components/BrandDesign/OurMotive";
 import BrandDesignHero from "@/components/Hero/BrandDesignHero";
 
 const page = () => {
@@ -7,6 +8,10 @@ const page = () => {
 				<main className="pt-36">
 					<BrandDesignHero />
 				</main>
+
+				<section className="pt-20">
+					<OurMotive />
+				</section>
 			</section>
 		</>
 	);
