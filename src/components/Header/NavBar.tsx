@@ -10,15 +10,15 @@ const NavBar = () => {
 		<header className="fixed right-0 left-0 z-[100] mx-auto w-full max-w-7xl px-6">
 			<nav className="mt-6 flex items-center justify-between rounded-md bg-black/6 px-6 pb-2 backdrop-blur-lg md:px-8 lg:rounded-4xl dark:bg-white/8">
 				<div className="mt-1 flex items-center">
-					{/* Logo  */}
+					{/* Logo */}
 					<Link href={"/"}>
 						<Image
 							src={"/logo.svg"}
 							alt="logo"
-							height={400}
-							width={400}
+							height={40}
+							width={100}
 							priority
-							className="h-[40] w-[100]"
+							className="h-[40px] w-[100px]"
 						/>
 					</Link>
 					<div className="mt-3">
@@ -26,10 +26,12 @@ const NavBar = () => {
 					</div>
 				</div>
 
+				{/* Desktop Nav */}
 				<div className="mt-2 hidden lg:block">
 					<DesktopNav />
 				</div>
 
+				{/* Mobile Nav */}
 				<div className="mt-2 block lg:hidden">
 					<MobileNav />
 				</div>

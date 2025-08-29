@@ -48,3 +48,26 @@ export type BlogCardsDataType = {
 		paragraph4: string;
 	};
 };
+
+export type MultipleServiceSecDatasType = {
+	url: string;
+
+	heroheading: string;
+	heroparagraph: string;
+	heroimg: string;
+	btn: string;
+
+	mainheading: string;
+	mainparagraph: string;
+	mainimg: string;
+
+	cardsecheading: string;
+
+	cradheading1: string;
+	cradheading2: string;
+	cradheading3: string;
+
+	cardpargraph1: string;
+	cardpargraph2: string;
+	cardpargraph3: string;
+};

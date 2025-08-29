@@ -10,6 +10,7 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navigationMenuTriggerStyle } from "../shadcnui/navigation-menu";
+
 const DesktopNav = () => {
 	const pathname = usePathname();
 
@@ -50,7 +51,7 @@ const DesktopNav = () => {
 										<Link
 											href="/ui-ux-design"
 											className={`${pathname == "/ui-ux-design" ? "bg-blue-500 text-white dark:bg-fuchsia-500" : null} font-medium hover:bg-blue-500 hover:text-white dark:hover:bg-fuchsia-500`}>
-											Ui/Ux Design
+											Ui-Ux Design
 										</Link>
 									</NavigationMenuLink>
 									<NavigationMenuLink asChild>
@@ -62,7 +63,7 @@ const DesktopNav = () => {
 									</NavigationMenuLink>
 									<NavigationMenuLink asChild>
 										<Link
-											href="/marketing"
+											href="marketing"
 											className={`${pathname == "/marketing" ? "bg-blue-500 text-white dark:bg-fuchsia-500" : null} font-medium hover:bg-blue-500 hover:text-white dark:hover:bg-fuchsia-500`}>
 											Marketing
 										</Link>
