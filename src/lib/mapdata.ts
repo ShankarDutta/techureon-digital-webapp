@@ -1,5 +1,13 @@
+import {
+	AboutWorkFlowCardsDataType,
+	BlogCardsDataType,
+	homeServiceCardsType,
+	MultipleServiceSecDatasType,
+	OurExpartsImagesType,
+} from "./types";
+
 // Home page card
-export const homeServiceCards = [
+export const homeServiceCards: homeServiceCardsType[] = [
 	{
 		id: 1,
 		heading: "Brand Design",
@@ -42,7 +50,7 @@ export const homeServiceCards = [
 	},
 ];
 
-export const AboutWorkFlowCardsDatas = [
+export const AboutWorkFlowCardsDatas: AboutWorkFlowCardsDataType[] = [
 	{
 		id: 1,
 		title: "Discover & Plan",
@@ -68,7 +76,7 @@ export const AboutWorkFlowCardsDatas = [
 	},
 ];
 
-export const OurExpartsImages = [
+export const OurExpartsImages: OurExpartsImagesType[] = [
 	{
 		id: 1,
 		src: "team-01.jpg",
@@ -106,7 +114,7 @@ export const OurExpartsImages = [
 	},
 ];
 
-export const BlogCardsDatas = [
+export const BlogCardsDatas: BlogCardsDataType[] = [
 	{
 		id: 1,
 		img: "post-01.jpg",
@@ -309,5 +317,140 @@ export const BlogCardsDatas = [
 			paragraph4:
 				"To drive results, we added strong CTAs—checklists, webinars, demo invites—ensuring viral content led to real conversions. The result? A 2x increase in leads and a brand that went from invisible to industry favorite.",
 		},
+	},
+];
+
+export const MultipleServiceSecDatas: MultipleServiceSecDatasType[] = [
+	{
+		url: "brand-design",
+
+		heroheading: "Brand Design",
+		heroparagraph: `Your brand is more than a logo – it’s your competitive
+						edge. We develop comprehensive visual identities
+						including color systems, typography hierarchies, and
+						design languages that communicate your unique value.
+						Let’s Rebrand `,
+		heroimg: "/Services/brand-design/service-02.jpg",
+		btn: "Let&apos;s Rebrand",
+
+		mainheading: "Branding That Demands Attention",
+		mainparagraph: `Your brand is more than a logo—it’s your story. We build
+					memorable visual identities from the ground up, including
+					logos, color systems, typography, and style guides. Our
+					strategic approach ensures your brand stands out, resonates
+					with your audience, and scales seamlessly as you grow.`,
+		mainimg: "/Services/brand-design/Brand-Design.png",
+
+		cardsecheading: "Our Brand Design Process",
+
+		cradheading1: "Discovery",
+		cradheading2: "Conceptualize",
+		cradheading3: "Build the System",
+
+		cardpargraph1: "We learn what makes you and your product unique.",
+		cardpargraph2:
+			"Where creativity meets strategy. Color palette exploration",
+		cardpargraph3: "Polishing every touchpoint. Mockups & asset templates",
+	},
+	{
+		url: "ui-ux-design",
+
+		heroheading: "UI/UX Design",
+		heroparagraph: `We craft user experiences that drive action, not just
+					admiration. Whether it’s a conversion-focused SaaS dashboard
+					or a mobile app that users can’t put down, our process
+					blends behavioral psychology with pixel-perfect execution. `,
+		heroimg: "/Services/uiux/service-01.jpg",
+		btn: "Get a Free UX Audit",
+
+		mainheading: "Design That Works as Hard as You Do",
+		mainparagraph: `	We craft user-centric interfaces that blend aesthetics with
+				functionality, turning complex workflows into intuitive
+				experiences. Through wireframing, prototyping, and usability
+				testing, we design digital products that reduce friction, boost
+				engagement, and drive conversions—whether it’s a SaaS dashboard,
+				mobile app, or e-commerce platform.`,
+		mainimg: "/Services/uiux/Service-1-Img-1.png",
+
+		cardsecheading: "Our UI/UX Design Process",
+
+		cradheading1: "Discover & Define",
+		cradheading2: "Ideate & Prototype",
+		cradheading3: "Refine & Validate",
+
+		cardpargraph1:
+			"We start by learning your business – its ambitions & challenges.",
+		cardpargraph2:
+			"Transforming insights into tangible designs – Accelerate your growth.",
+		cardpargraph3:
+			"Perfecting every pixel with real user feedback & user serveys.",
+	},
+	{
+		url: "development",
+
+		heroheading: "Web Development",
+		heroparagraph: `Modern businesses deserve modern websites. We build
+						lightning-fast Webflow sites with custom CMS
+						architectures, animations that enhance storytelling, and
+						SEO-optimized structures. Say goodbye to WordPress
+						bloat. `,
+		heroimg: "/Services/webdev/post-06.jpg",
+		btn: "Build your website",
+
+		mainheading: "Websites Built for Speed & Results",
+		mainparagraph: `Websites Built for Speed & Results Say goodbye to slow,
+					clunky websites. We build lightning-fast, SEO-optimized
+					Webflow sites with custom CMS architectures, sleek
+					animations, and editor-friendly interfaces. Whether you need
+					a marketing site or a scalable web app, we deliver
+					performance and polish without bloated code.`,
+		mainimg: "/Services/webdev/Webfloe-Img.png",
+
+		cardsecheading: "Our Web-Dev Process",
+
+		cradheading1: "Plan & Architect",
+		cradheading2: "Build & Optimize",
+		cradheading3: "Launch & Scale",
+
+		cardpargraph1:
+			"We design and develop high-conversion digital experiences.",
+		cardpargraph2:
+			"From pixel-perfect interfaces to scalable architectures.",
+		cardpargraph3:
+			"We design and develop high-conversion digital experiences.",
+	},
+	{
+		url: "marketing",
+
+		heroheading: "Marketing Service",
+		heroparagraph: `A trusted SEO and Digital Marketing partner in the USA,
+						we craft tailored strategies—SEO, PPC, social media, and
+						content marketing—that deliver measurable growth for
+						your business `,
+		heroimg: "/Services/marketing/image.png",
+		btn: "Launch Your Success",
+
+		mainheading: "Marketing That Works as Hard as You Hustle",
+		mainparagraph: `We create digital experiences that put users first—where design
+				meets functionality to deliver real impact. By combining
+				research-driven insights with wireframing, prototyping, and
+				usability testing, we transform complex ideas into seamless
+				interactions. From SaaS platforms to mobile apps and e-commerce
+				solutions, our designs reduce friction, enhance engagement, and
+				drive measurable growth for your business.`,
+		mainimg: "/Services/marketing/market.jpg",
+
+		cardsecheading: "Our Web-Dev Process",
+
+		cradheading1: "1. Research & Strategize",
+		cradheading2: "2. Execute & Optimize",
+		cradheading3: "3. Scale & Dominate",
+
+		cardpargraph1:
+			"We analyze your market, audience, and competitors to craft data-driven strategies.",
+		cardpargraph2:
+			"From SEO and ads to content and social, we execute campaigns that convert.",
+		cardpargraph3:
+			"We amplify results, boost ROI, and scale your brand’s digital presence for lasting growth.",
 	},
 ];

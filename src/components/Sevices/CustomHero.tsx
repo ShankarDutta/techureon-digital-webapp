@@ -1,30 +1,39 @@
 import Image from "next/image";
 import { Button } from "../shadcnui/button";
 
-const MarketingHero = () => {
+type HeroProps = {
+	heading?: string;
+	paragraph?: string;
+	img?: string;
+	btnvalue?: string;
+};
+
+const CustomHero = ({
+	heading = "",
+	paragraph = "",
+	img = "",
+	btnvalue = " ",
+}: HeroProps) => {
 	return (
 		<>
 			<section className="flex flex-col items-center gap-10 md:flex-row">
 				{/* text block */}
 				<div className="order-2 flex-1 lg:order-1">
 					<h1 className="mb-2 text-2xl font-bold md:text-3xl lg:text-5xl">
-						Marketing Service
+						{heading}
 					</h1>
 					<p className="md:text-md text-sm text-black/80 lg:text-lg dark:text-white/80">
-						A trusted SEO and Digital Marketing partner in the USA,
-						we craft tailored strategies—SEO, PPC, social media, and
-						content marketing—that deliver measurable growth for
-						your business
+						{paragraph}
 					</p>
 					<Button className="mt-4 bg-blue-500 text-white hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700">
-						Launch Your Success
+						{btnvalue}
 					</Button>
 				</div>
 
 				{/* image block */}
 				<div className="order-1 h-full w-full flex-1 md:order-2">
 					<Image
-						src="/Services/marketing/image.png"
+						src={img}
 						alt="UI/UX Service"
 						width={500}
 						height={500}
@@ -36,4 +45,4 @@ const MarketingHero = () => {
 	);
 };
 
-export default MarketingHero;
+export default CustomHero;
