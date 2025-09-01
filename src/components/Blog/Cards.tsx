@@ -18,6 +18,7 @@ const Cards = ({ info }: Cardprops) => {
 					alt="Cards-Images"
 					height={720}
 					width={1080}
+					priority
 					className="h-auto w-full rounded-xl"
 				/>
 

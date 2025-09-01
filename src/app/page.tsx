@@ -37,7 +37,7 @@ const page = () => {
 			<section className="grid grid-cols-1 gap-6 px-0 pt-14 md:px-6 lg:grid-cols-2">
 				<ServiceSec />
 			</section>
-			<section className="pt-20 pb-40">
+			<section className="py-20">
 				<h1 className="text-center text-4xl font-bold">
 					What Clients Say About Us
 				</h1>

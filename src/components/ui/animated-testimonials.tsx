@@ -3,6 +3,7 @@
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useCallback, useEffect, useState } from "react";
+import { Button } from "../shadcnui/button";
 
 type Testimonial = {
 	quote: string;
@@ -148,18 +149,18 @@ export const AnimatedTestimonials = ({
 
 					{/* Controls */}
 					<div className="flex gap-4 pt-2">
-						<button
+						<Button
 							aria-label="Previous testimonial"
 							onClick={handlePrev}
 							className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800">
 							<IconArrowLeft className="group-hover/ h-5 w-5 text-black transition-transform duration-300 dark:text-neutral-400" />
-						</button>
-						<button
+						</Button>
+						<Button
 							aria-label="Next testimonial"
 							onClick={handleNext}
 							className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800">
 							<IconArrowRight className="group-hover/ h-5 w-5 text-black transition-transform duration-300 dark:text-neutral-400" />
-						</button>
+						</Button>
 					</div>
 				</div>
 			</div>
