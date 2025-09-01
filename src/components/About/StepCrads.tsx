@@ -54,7 +54,7 @@ const StepCrads = ({ info }: CardProps) => {
 					<CardContent className="text-md p-4">
 						{info.description}
 					</CardContent>
-					<CardFooter className="border-border flex justify-center p-4 [.border-t]:pt-4">
+					<CardFooter className="border-border flex justify-center p-4 pt-4">
 						<Button className="cursor-pointer bg-blue-500 text-white hover:scale-110 hover:bg-blue-600">
 							{info.buttonText}
 						</Button>

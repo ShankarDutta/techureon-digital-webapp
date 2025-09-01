@@ -45,7 +45,9 @@ const SubscribeForm = () => {
 							</FormItem>
 						)}
 					/>
+
 					<Button
+						type="submit"
 						className="mt-4 w-full"
 						disabled={rhForm.formState.isSubmitSuccessful}>
 						{rhForm.formState.isSubmitSuccessful ? (
