@@ -3,34 +3,16 @@ import { Button } from "@/components/shadcnui/button";
 import { Card } from "@/components/shadcnui/card";
 import { BlogCardsDatas } from "@/lib/mapdata";
 import { MoveLeft, MoveRight } from "lucide-react";
-import type { Metadata } from "next";
 
 import Image from "next/image";
 import Link from "next/link";
 
 interface BlogProps {
-	params: { slug: string };
-}
-
-//  Dynamic Title Only
-export async function generateMetadata({
-	params,
-}: BlogProps): Promise<Metadata> {
-	const blog = BlogCardsDatas.find((b) => b.slug === params.slug);
-
-	if (!blog) {
-		return {
-			title: "Blog Not Found | TeachUreon",
-		};
-	}
-
-	return {
-		title: `${blog.title} | TeachUreon Blog`,
-	};
+	params: Promise<{ slug: string }>;
 }
 
 const Page = async ({ params }: BlogProps) => {
-	const { slug } = params;
+	const { slug } = await params;
 	await new Promise((resolve) => setTimeout(resolve, 2000)); // simulate loading
 	const blog = BlogCardsDatas.find((b) => b.slug === slug);
 
