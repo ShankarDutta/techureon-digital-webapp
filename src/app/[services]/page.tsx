@@ -3,44 +3,26 @@ import CustomHero from "@/components/Sevices/CustomHero";
 import CustomMain from "@/components/Sevices/CustomMain";
 import { MultipleServiceSecDatas } from "@/lib/mapdata";
 import { Metadata } from "next";
+
 import { notFound } from "next/navigation";
 
 interface PageProps {
-	params: Promise<{ services: string }>;
-}
-
-interface ServicesProps {
 	params: { services: string };
 }
 
-//  Dynamic Title Only
-export async function generateMetadata({
-	params,
-}: ServicesProps): Promise<Metadata> {
-	const { services } = await params;
-	const title = MultipleServiceSecDatas.find((b) => b.url === services);
-
-	if (!title) {
-		return {
-			title: "Blog Not Found | TeachUreon",
-		};
-	}
-
-	return {
-		title: `${title.url} | TeachUreon Services`,
-	};
-}
+export const metadata: Metadata = {
+	title: " Services | TeachUreon ",
+	description:
+		"TeachUreon is a leading IT solutions company providing web development, digital transformation, cloud services, and custom software solutions to help businesses grow in the digital era.",
+};
 
 const Page = async ({ params }: PageProps) => {
 	const { services } = await params;
 	const getData = MultipleServiceSecDatas.find((b) => b.url === services);
-	console.log(getData); //check data
+	console.log(getData); // check data
 
-	await new Promise((resolve) => {
-		setTimeout(() => {
-			resolve("");
-		}, 1500);
-	});
+	// optional delay for demo
+	await new Promise((resolve) => setTimeout(resolve, 1500));
 
 	if (!getData) {
 		return notFound();
