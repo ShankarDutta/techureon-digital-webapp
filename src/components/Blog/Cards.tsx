@@ -1,18 +1,22 @@
+"use client";
 import { Card, CardContent } from "@/components/shadcnui/card";
 import { BlogCardsDataType } from "@/lib/types";
+import { useAOS } from "@/lib/useaos";
 import Image from "next/image";
-import Link from "next/link";
+import UsableBtn from "../customui/UsableBtn";
 import { Badge } from "../shadcnui/badge";
-import { Button } from "../shadcnui/button";
 
 type Cardprops = {
 	info: BlogCardsDataType;
 };
 
 const Cards = ({ info }: Cardprops) => {
+	useAOS();
 	return (
 		<>
-			<Card className="border-0 py-0 shadow-lg transition-all hover:shadow-md hover:shadow-blue-300">
+			<Card
+				className="border-0 py-0 shadow-lg transition-all hover:shadow-md hover:shadow-blue-300"
+				data-aos="fade-up">
 				<Image
 					src={`/blog/${info.img}`}
 					alt="Cards-Images"
@@ -29,11 +33,13 @@ const Cards = ({ info }: Cardprops) => {
 						{info.subtitle}
 					</p>
 
-					<Link href={`/blog/${info.slug}`}>
-						<Button className="bg-blue-500 text-white hover:cursor-pointer hover:bg-blue-600">
+					<div className="mt-2 flex justify-start">
+						<UsableBtn
+							className=""
+							href={`/blog/${info.slug}`}>
 							Know More
-						</Button>
-					</Link>
+						</UsableBtn>
+					</div>
 				</CardContent>
 			</Card>
 		</>

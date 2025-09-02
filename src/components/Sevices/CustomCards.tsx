@@ -1,4 +1,4 @@
-import { LocationEditIcon, Mail, PhoneCall } from "lucide-react";
+import { CheckIcon } from "lucide-react";
 import { Card, CardDescription, CardHeader, CardTitle } from "../shadcnui/card";
 
 interface Cardsprops {
@@ -22,8 +22,8 @@ const CustomCards = ({
 		<>
 			<Card className="border-0">
 				<CardHeader className="flex flex-col items-center justify-center">
-					<div className="rounded-full bg-orange-400 p-5">
-						<LocationEditIcon color="white" />
+					<div className="rounded-full bg-blue-500 p-5">
+						<CheckIcon color="white" />
 					</div>
 					<CardTitle className="text-2xl">{heading1}</CardTitle>
 					<CardDescription className="text-center text-lg">
@@ -33,8 +33,8 @@ const CustomCards = ({
 			</Card>
 			<Card className="border-0">
 				<CardHeader className="flex flex-col items-center justify-center">
-					<div className="rounded-full bg-orange-400 p-5">
-						<PhoneCall color="white" />
+					<div className="rounded-full bg-blue-500 p-5">
+						<CheckIcon color="white" />
 					</div>
 					<CardTitle className="text-2xl">{heading2}</CardTitle>
 					<CardDescription className="text-center text-lg">
@@ -44,8 +44,8 @@ const CustomCards = ({
 			</Card>
 			<Card className="border-0">
 				<CardHeader className="flex flex-col items-center justify-center">
-					<div className="rounded-full bg-orange-400 p-5">
-						<Mail color="white" />
+					<div className="rounded-full bg-blue-500 p-5">
+						<CheckIcon color="white" />
 					</div>
 					<CardTitle className="text-2xl">{heading3}</CardTitle>
 					<CardDescription className="text-center text-lg">

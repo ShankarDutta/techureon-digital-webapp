@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ThemeToggleButton from "../customui/ThemeToggleButton";
-import { Button } from "../shadcnui/button";
+import UsableBtn from "../customui/UsableBtn";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 
@@ -36,9 +36,13 @@ const NavBar = () => {
 					<MobileNav />
 				</div>
 
-				<Button className="mt-2 hidden bg-blue-500 text-white hover:cursor-pointer hover:bg-blue-600 lg:block">
-					Schedule a Call
-				</Button>
+				<div className="mt-2 flex justify-start">
+					<UsableBtn
+						className=""
+						href="/contact">
+						Schedule a Call
+					</UsableBtn>
+				</div>
 			</nav>
 		</header>
 	);

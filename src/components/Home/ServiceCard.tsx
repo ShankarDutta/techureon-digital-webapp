@@ -7,10 +7,9 @@ import {
 	CardTitle,
 } from "@/components/shadcnui/card";
 import { homeServiceCardsType } from "@/lib/types";
-import Link from "next/link";
 import { FaCircleCheck } from "react-icons/fa6";
+import UsableBtn from "../customui/UsableBtn";
 import { ShineBorder } from "../magicui/shine-border";
-import { Button } from "../shadcnui/button";
 
 type CardPropsType = {
 	info: homeServiceCardsType;
@@ -40,11 +39,13 @@ const ServiceCard = ({ info }: CardPropsType) => {
 					</p>
 				</CardContent>
 				<CardFooter>
-					<Link href={info.link}>
-						<Button className="hover: mt-2 bg-blue-500 text-white hover:cursor-pointer hover:bg-blue-600">
+					<div className="flex justify-start">
+						<UsableBtn
+							className=""
+							href={info.link}>
 							Read More
-						</Button>
-					</Link>
+						</UsableBtn>
+					</div>
 				</CardFooter>
 			</Card>
 		</>

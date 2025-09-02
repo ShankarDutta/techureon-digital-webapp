@@ -2,10 +2,33 @@ import CustomCards from "@/components/Sevices/CustomCards";
 import CustomHero from "@/components/Sevices/CustomHero";
 import CustomMain from "@/components/Sevices/CustomMain";
 import { MultipleServiceSecDatas } from "@/lib/mapdata";
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 interface PageProps {
 	params: Promise<{ services: string }>;
+}
+
+interface ServicesProps {
+	params: { services: string };
+}
+
+//  Dynamic Title Only
+export async function generateMetadata({
+	params,
+}: ServicesProps): Promise<Metadata> {
+	const { services } = await params;
+	const title = MultipleServiceSecDatas.find((b) => b.url === services);
+
+	if (!title) {
+		return {
+			title: "Blog Not Found | TeachUreon",
+		};
+	}
+
+	return {
+		title: `${title.url} | TeachUreon Services`,
+	};
 }
 
 const Page = async ({ params }: PageProps) => {

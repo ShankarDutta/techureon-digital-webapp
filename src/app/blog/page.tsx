@@ -2,6 +2,31 @@ import CardsSec from "@/components/Blog/CardsSec";
 import BlogHero from "@/components/Hero/BlogHero";
 import { Button } from "@/components/shadcnui/button";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Blog | TeachUreon Insights & Tech Articles",
+	description:
+		"Stay updated with the latest insights from TeachUreon. Explore articles on IT solutions, web development, digital transformation, cloud services, and emerging technologies.",
+	keywords: [
+		"TeachUreon Blog",
+		"IT insights",
+		"tech articles",
+		"software development trends",
+		"cloud computing",
+		"digital transformation blogs",
+		"IT consulting resources",
+	],
+	openGraph: {
+		title: "Blog | TeachUreon Insights & Tech Articles",
+		description:
+			"Read expert insights from TeachUreon on technology, IT solutions, software development, and cloud innovations.",
+		url: "https://teachureon.com/blog",
+		siteName: "TeachUreon",
+		type: "article",
+	},
+};
+
 const page = () => {
 	return (
 		<section className="mx-auto max-w-7xl overflow-hidden px-6">

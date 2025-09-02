@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button } from "../shadcnui/button";
+import UsableBtn from "../customui/UsableBtn";
 
 const AboutBrief = () => {
 	return (
@@ -17,10 +17,13 @@ const AboutBrief = () => {
 					functional, and human-centered. From startups to global
 					brands, we help ambitious businesses stand out.
 				</p>
-
-				<Button className="border-2 border-blue-500 bg-transparent text-black hover:cursor-pointer hover:bg-blue-600 hover:text-white dark:text-white">
-					Know More About Us
-				</Button>
+				<div className="flex justify-start">
+					<UsableBtn
+						className=""
+						href="/about">
+						Know More About Us
+					</UsableBtn>
+				</div>
 			</div>
 
 			<Image
