@@ -2,19 +2,12 @@ import CustomCards from "@/components/Sevices/CustomCards";
 import CustomHero from "@/components/Sevices/CustomHero";
 import CustomMain from "@/components/Sevices/CustomMain";
 import { MultipleServiceSecDatas } from "@/lib/mapdata";
-import { Metadata } from "next";
 
 import { notFound } from "next/navigation";
 
 interface PageProps {
-	params: { services: string };
+	params: Promise<{ services: string }>;
 }
-
-export const metadata: Metadata = {
-	title: " Services | TeachUreon ",
-	description:
-		"TeachUreon is a leading IT solutions company providing web development, digital transformation, cloud services, and custom software solutions to help businesses grow in the digital era.",
-};
 
 const Page = async ({ params }: PageProps) => {
 	const { services } = await params;
