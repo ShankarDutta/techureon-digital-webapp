@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button } from "../shadcnui/button";
+import UsableBtn from "../customui/UsableBtn";
 
 type HeroProps = {
 	heading?: string;
@@ -25,9 +25,13 @@ const CustomHero = ({
 					<p className="md:text-md text-sm text-black/80 lg:text-lg dark:text-white/80">
 						{paragraph}
 					</p>
-					<Button className="mt-4 bg-blue-500 text-white hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700">
-						{btnvalue}
-					</Button>
+					<div className="mt-3 flex justify-start">
+						<UsableBtn
+							className=""
+							href="#">
+							{btnvalue}
+						</UsableBtn>
+					</div>
 				</div>
 
 				{/* image block */}

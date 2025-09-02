@@ -2,6 +2,29 @@ import Awards from "@/components/About/Awards";
 import TeamSlide from "@/components/About/TeamSlide";
 import WorkFlow from "@/components/About/WorkFlow";
 import AboutHero from "@/components/Hero/AboutHero";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+	title: "About Us | TeachUreon",
+	description:
+		"Discover TeachUreon’s journey as a leading IT solutions company. Learn about our mission, values, and expertise in web development, digital transformation, cloud services, and custom software solutions.",
+	keywords: [
+		"TeachUreon",
+		"About TeachUreon",
+		"IT company",
+		"technology solutions",
+		"digital transformation",
+		"cloud services",
+		"software development",
+		"IT consulting",
+	],
+	openGraph: {
+		title: "About Us | TeachUreon",
+		description:
+			"Get to know TeachUreon — an innovative IT solutions provider helping businesses achieve growth with web development, cloud, and digital transformation services.",
+		url: "https://teachureon.com/about",
+		siteName: "TeachUreon",
+	},
+};
 
 const page = () => {
 	return (

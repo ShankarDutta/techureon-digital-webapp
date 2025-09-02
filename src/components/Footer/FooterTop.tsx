@@ -1,4 +1,4 @@
-import { Button } from "../shadcnui/button";
+import UsableBtn from "../customui/UsableBtn";
 import { AuroraBackground } from "../ui/aurora-background";
 
 const FooterTop = () => {
@@ -14,9 +14,13 @@ const FooterTop = () => {
 					technology, creativity, and strategy to drive your success.
 					for this para suggest a heading
 				</div>
-				<Button className="mt-2 bg-blue-500 text-white hover:cursor-pointer hover:bg-blue-600">
-					Contact Now
-				</Button>
+				<div className="flex justify-start">
+					<UsableBtn
+						className=""
+						href="/contact">
+						Contact Now
+					</UsableBtn>
+				</div>
 			</div>
 		</AuroraBackground>
 	);

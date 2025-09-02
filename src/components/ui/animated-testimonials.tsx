@@ -2,6 +2,7 @@
 
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 import { Button } from "../shadcnui/button";
 
@@ -90,7 +91,7 @@ export const AnimatedTestimonials = ({
 										ease: "easeInOut",
 									}}
 									className="absolute inset-0 origin-bottom">
-									<img
+									<Image
 										src={testimonial.src}
 										alt={testimonial.name}
 										width={500}
@@ -152,14 +153,14 @@ export const AnimatedTestimonials = ({
 						<Button
 							aria-label="Previous testimonial"
 							onClick={handlePrev}
-							className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800">
-							<IconArrowLeft className="group-hover/ h-5 w-5 text-black transition-transform duration-300 dark:text-neutral-400" />
+							className="flex h-7 w-7 cursor-pointer items-center justify-center rounded-full bg-gray-100 hover:bg-gray-100 dark:bg-neutral-800">
+							<IconArrowLeft className="h-5 w-5 text-black dark:text-neutral-400" />
 						</Button>
 						<Button
 							aria-label="Next testimonial"
 							onClick={handleNext}
-							className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800">
-							<IconArrowRight className="group-hover/ h-5 w-5 text-black transition-transform duration-300 dark:text-neutral-400" />
+							className="flex h-7 w-7 cursor-pointer items-center justify-center rounded-full bg-gray-100 hover:bg-gray-100 dark:bg-neutral-800">
+							<IconArrowRight className="h-5 w-5 text-black dark:text-neutral-400" />
 						</Button>
 					</div>
 				</div>

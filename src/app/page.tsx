@@ -8,8 +8,9 @@ import Slider from "@/components/Home/Slider";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Home | Nextjs Starter Template",
-	description: "Home page of Nextjs Starter Template",
+	title: "TeachUreon | Innovative IT Solutions & Digital Services",
+	description:
+		"TeachUreon is a leading IT solutions company providing web development, digital transformation, cloud services, and custom software solutions to help businesses grow in the digital era.",
 };
 
 const page = () => {

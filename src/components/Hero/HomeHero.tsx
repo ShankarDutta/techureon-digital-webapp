@@ -2,7 +2,7 @@ import { AnimatedGradientText } from "@/components/magicui/animated-gradient-tex
 import { cn } from "@/lib/utils";
 import { ChevronRight } from "lucide-react";
 import BadgeLogoChanger from "../customui/BadgeLogoChanger";
-import { Button } from "../shadcnui/button";
+import UsableBtn from "../customui/UsableBtn";
 const HomeHero = () => {
 	return (
 		<section className="grid place-items-center space-y-6 text-center">
@@ -40,10 +40,13 @@ const HomeHero = () => {
 					startups, agencies, and businesses that refuse to settle for
 					good enough.
 				</p>
-
-				<Button className="bg-blue-500 text-white hover:cursor-pointer hover:bg-blue-600">
-					Book a Meeting
-				</Button>
+				<div className="flex justify-center">
+					<UsableBtn
+						className=""
+						href="/conatct">
+						Book a Meeting
+					</UsableBtn>
+				</div>
 			</div>
 		</section>
 	);

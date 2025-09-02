@@ -12,7 +12,7 @@ export const homeServiceCards: homeServiceCardsType[] = [
 		id: 1,
 		heading: "Brand Design",
 		discription:
-			"Visual identities that inspire trust and growth. We craft with clarity and purpose.",
+			"Visual identities that inspire trust and growth of Your Identity. We craft with clarity and purpose.",
 		pointsI: "Logos infused with hidden stories.",
 		pointsII: "Scalable visual identities for growth.",
 		pointsIII: "Style guides anyone can follow easily.",
