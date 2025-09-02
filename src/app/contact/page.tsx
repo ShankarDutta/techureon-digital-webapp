@@ -26,12 +26,12 @@ export const metadata: Metadata = {
 
 const page = () => {
 	return (
-		<>
+		<section className="mx-auto max-w-7xl px-6">
 			<ContactUi />
 			<section className="mt-20 pb-20 text-center lg:mt-0">
 				<FindUsCard />
 			</section>
-		</>
+		</section>
 	);
 };
 

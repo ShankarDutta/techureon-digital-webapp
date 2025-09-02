@@ -36,13 +36,11 @@ const NavBar = () => {
 					<MobileNav />
 				</div>
 
-				<div className="mt-2 flex justify-start">
-					<UsableBtn
-						className=""
-						href="/contact">
-						Schedule a Call
-					</UsableBtn>
-				</div>
+				<UsableBtn
+					className="mt-2 hidden lg:block"
+					href="/contact">
+					Schedule a Call
+				</UsableBtn>
 			</nav>
 		</header>
 	);
