@@ -3,12 +3,23 @@ import { Button } from "@/components/shadcnui/button";
 import { Card } from "@/components/shadcnui/card";
 import { BlogCardsDatas } from "@/lib/mapdata";
 import { MoveLeft, MoveRight } from "lucide-react";
+import { Metadata } from "next";
 
 import Image from "next/image";
 import Link from "next/link";
 
 interface BlogProps {
 	params: Promise<{ slug: string }>;
+}
+
+export async function generateMetadata({
+	params,
+}: BlogProps): Promise<Metadata> {
+	const { slug } = await params;
+	const gettitle = BlogCardsDatas.find((b) => b.slug === slug);
+	return {
+		title: gettitle?.slug,
+	};
 }
 
 const Page = async ({ params }: BlogProps) => {

@@ -26,7 +26,8 @@ const ContactUi = () => {
 						alt="img"
 						height={400}
 						width={400}
-						className="mx-auto h-[400] w-[400]"
+						priority
+						className="mx-auto h-auto w-full md:h-[400] md:w-[400]"
 					/>
 				</div>
 				<ContactForm />

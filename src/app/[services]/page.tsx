@@ -2,11 +2,20 @@ import CustomCards from "@/components/Sevices/CustomCards";
 import CustomHero from "@/components/Sevices/CustomHero";
 import CustomMain from "@/components/Sevices/CustomMain";
 import { MultipleServiceSecDatas } from "@/lib/mapdata";
-
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-
 interface PageProps {
 	params: Promise<{ services: string }>;
+}
+
+export async function generateMetadata({
+	params,
+}: PageProps): Promise<Metadata> {
+	const { services } = await params;
+	const gettitle = MultipleServiceSecDatas.find((b) => b.url === services);
+	return {
+		title: gettitle?.url,
+	};
 }
 
 const Page = async ({ params }: PageProps) => {
